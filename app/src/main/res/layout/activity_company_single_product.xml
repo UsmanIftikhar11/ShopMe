@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shopme.CompanySingleProduct">
+
+    <ImageButton
+        android:id="@+id/imageSelect1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/add_btn" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageSelect1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_border"
+                android:hint="Add title..."
+                android:inputType="textPersonName"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/input_desc1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/input_title1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_border"
+                android:hint="Add description..."
+                android:inputType="textMultiLine"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/input_price1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/input_desc1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_border"
+                android:hint="Add price..."
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/spinner1"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_price1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentRight="true"/>
+            <EditText
+                android:id="@+id/input_category1"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_price1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_border"
+                android:hint="Choose category"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+            <CheckBox
+                android:id="@+id/checkbox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Include Discount"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/input_discount1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/checkbox1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_border"
+                android:hint="Add discount..."
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:visibility="invisible"/>
+
+            <EditText
+                android:id="@+id/input_discountDate1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/input_discount1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_border"
+                android:hint="Days Left"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/submit_post1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Product"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/icons"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="470dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

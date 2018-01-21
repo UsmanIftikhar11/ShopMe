@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shopme.CompanyDisountCoupen">
+
+    <TextView
+        android:id="@+id/txt_addDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Enter details to create discount"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/input_discCompany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_border"
+        android:hint="Company Name..."
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:layout_below="@+id/txt_addDetails"/>
+
+    <EditText
+        android:id="@+id/input_discProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_border"
+        android:hint="product Name..."
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:layout_below="@+id/input_discCompany"/>
+
+    <EditText
+        android:id="@+id/input_discPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_border"
+        android:hint="Discount in rupees or % ..."
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:layout_below="@+id/input_discProduct"/>
+
+    <EditText
+        android:id="@+id/input_discDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_border"
+        android:hint="Description ..."
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:layout_below="@+id/input_discPrice"/>
+
+    <Button
+        android:id="@+id/submit_Disc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Product"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/icons"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

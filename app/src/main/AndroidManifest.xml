@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shopme">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/CustomAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".CustomerLogin"
+            android:theme="@style/CustomAppTheme" />
+        <activity
+            android:name=".CompanyLogin"
+            android:theme="@style/CustomAppTheme" />
+        <activity
+            android:name=".CustomerRegistration"
+            android:theme="@style/CustomAppTheme" />
+        <activity
+            android:name=".CompanyRegistration"
+            android:theme="@style/CustomAppTheme" />
+        <activity
+            android:name=".CompanyHome"
+            android:label="Your Products" />
+        <activity
+            android:name=".CustomerHome"
+            android:theme="@style/CustomAppTheme" />
+        <activity
+            android:name=".CompanyAddProduct"
+            android:label="Add Product" />
+        <activity android:name=".CompanySingleProduct" />
+        <activity android:name=".CustomerWishlist" />
+        <activity android:name=".CustomerSearchProduct" />
+        <activity android:name=".CustomerSearchCompany" />
+        <activity android:name=".CompanyDeleteProduct" />
+        <activity android:name=".CustomerSingleCompanyProducts" />
+        <activity android:name=".CompanyDisountCoupen" />
+        <activity android:name=".CustomerDiscountCoupen" />
+        <activity android:name=".SingleAccessories" />
+        <activity android:name=".SingleClothing" />
+        <activity android:name=".SingleElectronics" />
+        <activity android:name=".SingleSports"></activity>
+    </application>
+
+</manifest>

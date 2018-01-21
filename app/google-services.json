@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "618221443980",
+    "firebase_url": "https://shopme-19c9f.firebaseio.com",
+    "project_id": "shopme-19c9f",
+    "storage_bucket": "shopme-19c9f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:618221443980:android:529a0ce09c2c2989",
+        "android_client_info": {
+          "package_name": "com.example.shopme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "618221443980-8rt0b5i9ml125485f7vtlk274gbprvq2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shopme",
+            "certificate_hash": "17757cbc3fea88cf58498ed656ed3f5440edd7f1"
+          }
+        },
+        {
+          "client_id": "618221443980-q41dlo5uvqq4h9du97hg08uokgjb3520.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArKq3tWx1B8Fdy3C3PEH9mQkrr4kKFpiA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "618221443980-q41dlo5uvqq4h9du97hg08uokgjb3520.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
